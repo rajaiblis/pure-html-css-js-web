@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+/* Basic */
+
+*{
+   
+    box-sizing: border-box;
+}
+
+:root {
+    --putih : #f1f3f4;
+    --biru-muda : #14c6ee;
+    --biru-tua : #00a8cc;
+    --orange: #FFD700;
+    --hijau: #44c767;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #ffffff;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+/* ----------------------------------------------- */
+
+/* Menu */
+
+nav {
+    background-color: var(--orange);
+    padding: 20px 10px;
+    text-align: center;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+    padding: 20px 20px;
+ }
+
+/* ----------------------------------------------- */
+
+
+/* Jumbotron */
+
+.jumbotron {
+    font-size: 20px;
+    padding: 90px 60px;
+    background-color: var(--biru-muda);
+    text-align: center;
+    color: #ffffff;
+}
+
+.subtitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+#logo{
+    margin-bottom: 30px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Float Kiri Sidebar */
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+
+
+/* ----------------------------------------------- */
+
+/* Standar */
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--biru-muda);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--biru-muda);
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin: 30px;
+}
+
+h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--biru-tua); 
+    padding: 5px 5px;
+}
+
+p,li {
+    font-family: 'Lato', sans-serif;
+    padding: 5px 5px;
+}
+
+label {
+    font-family: 'Lato', sans-serif;
+}
+
+figcaption {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold; 
+}
+
+.lingkaran {
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.75);
+    margin-bottom: 25px;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.spasi {
+    margin-bottom: 50px;
+}
+
+.center {
+    width: 100%;
+    max-height: 466px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Animasi */
+
+@keyframes dariBawah {
+
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+        -webkit-transform: translateY(30px);
+        -moz-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+        -o-transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+
+}
+
+@keyframes fadeInRight {
+    0% {
+       opacity: 0;
+       transform: translateX(20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+} 
+
+/* Tombol */
+
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ;
+    -webkit-transition: all 0.2s ;
+    -moz-transition: all 0.2s ;
+    -ms-transition: all 0.2s ;
+    -o-transition: all 0.2s ;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.btn:hover {
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(3px);
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    -o-transform: translateY(3px);
+}
+
+.btn:active {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+    -webkit-transform: translateY(1px);
+    -moz-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    -o-transform: translateY(1px);
+}
+
+.btn-putih {
+    background-color: var(--hijau);
+    color: #ffffff;
+    box-sizing: none;
+    margin: 20px;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.4s;
+    z-index: -1;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+.btn-putih::after {
+    background-color: #FFD700;
+}
+
+.btn-hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animasi {
+    animation: dariBawah 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+    -webkit-animation: dariBawah 0.5s ease-out 0.75s;
+}
+
+/* skill bar */
+
+.skill{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.seo{
+    width: 85%;
+    background-color: #F44336
+}
+
+.wp{
+    width: 70%;
+    background-color: #2196F3
+}
+
+.linux{
+    width: 50%;
+    background-color: #FFCA28}
+
+.cdr{
+    width: 62%;
+    background-color: #F06292
+}
+
+.ap{
+    width: 60%;
+    background-color: #FFA000
+}
+
+.dm{
+    width: 75%;
+    background-color: #303F9F
+}
+
+/* Counter Box */
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+    overflow: auto;
+
+}
+
+
+.counters {
+	background-color: #ffffff;
+	color: #ffffff;
+	
+}
+
+.counters .container {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+	gap: 30px;
+	text-align: center;
+}
+
+.counters img {
+	color: #ffffff;
+	margin-bottom: 5px;
+}
+
+.counters .counter {
+	font-size: 45px;
+	margin: 10px 0;
+}
+
+@media (max-width: 700px) {
+	.counters .container {
+		display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+	gap: 30px;
+	text-align: center;
+	}
+
+	.counters .container > div:nth-of-type(1),
+	.counters .container > div:nth-of-type(2) {
+		padding-bottom: 20px;
+	}
+}
+
+
+/* Tombol Back To Top */
+
+#backtotop {
+    position: fixed;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    bottom: 25px;
+    margin: 0 25px 0 0;
+    z-index: 9999;
+    transition: 0.35s;
+    transform: scale(0.7);
+    transition: all 0.5s;
+    -webkit-transition: 0.35s;
+    -moz-transition: 0.35s;
+    -ms-transition: 0.35s;
+    -o-transition: 0.35s;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+}
+
+#backtotop.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+#backtotop.visible a:hover {
+    outline: none;
+    opacity: 0.9;
+    background-color: var(--biru-tua);
+}
+
+#backtotop a {
+    outline: none;
+    text-decoration: none;
+    border: 0 none;
+    display: block;
+    width: 46px;
+    height: 46px;
+    background-color: var(--hijau);
+    opacity: 1;
+    transition: all 0.3s;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 26px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+body #backtotop a {
+    outline: none;
+    color: #fff;
+}
+
+#backtotop a:after {
+    outline: none;
+    content: url(/assets/img/atas.png);
+    font-weight: 900;
+    position: relative;
+    display: block;
+    top: 50%;
+    -webkit-transform: translateY(-55%);
+    transform: translateY(-55%);
+    -moz-transform: translateY(-55%);
+    -ms-transform: translateY(-55%);
+    -o-transform: translateY(-55%);
+}
+
+
+/* ----------------------------------------------- */
+
+/* Footer */
+
+footer {
+    padding: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--biru-tua);
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ----------------------------------------------- */
+
+/* Rensponsive */
+
+@media screen and (max-width: 700px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+
+/* ----------------------------------------------- */
